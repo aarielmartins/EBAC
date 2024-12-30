@@ -1,0 +1,27 @@
+@use '../variable';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    //O NOWRAP FAZ COM QUE A LINHA NÃO
+    white-space: nowrap;
+
+    &--primary{
+        color: variable.$textColor;
+        background-color: variable.$buttonColor;
+    }
+
+    @media (max-width: 640px){
+        display: block;
+        //EM UMA TAG A NÃO É NECESSÁRIO, MAS EM UMA TAG BUTTON SERIA
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){
+        display: flex;
+        align-items: center;
+    }
+}

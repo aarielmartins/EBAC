@@ -1,3 +1,5 @@
+@use 'variable';
+
 .hero{
     padding-top: 64px;
     padding-bottom: 100px;
@@ -23,7 +25,7 @@
         //OCUPA O MESMO TAMANHO DO ELEMENTO PAI
         width: 100%;
         height: 100%;
-        background-color: #000;
+        background-color: variable.$secondaryTextColor;
         //OPACIDADE DE 70%
         opacity: 0.7;
         content: "";
